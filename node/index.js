@@ -3,9 +3,9 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-app.get('/', (request, response) => {
+app.get('/node', (request, response) => {
   return response.send({
-    message: 'Helo World!',
+    message: 'AWS 3.0',
     node: process.env.HOSTNAME
   });
 });
